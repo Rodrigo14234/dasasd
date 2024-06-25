@@ -1,0 +1,89 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: gray;
+  font-family: "lato", sans-serif;
+}
+.loginFrm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form {
+    background-color: white;
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+} 
+.title {
+    font-size: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.inputContainer {
+    position: relative;
+    height: 45px;
+    width: 100%;
+    margin-bottom: 17px;
+}
+
+.input {
+    position: absolute;
+    top: 0px;
+    left: -15px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+}
+
+.input:focus + .label,
+.input:not(:placeholder-shown) + .label {
+    top: -12px;
+    left: 12px;
+    background-color: white;
+    color: #1a73e8;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+::placeholder {
+    color: transparent;
+}
+
+.label {
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    padding: 0 4px;
+    background-color: white;
+    color: #DADCE0;
+    font-size: 16px;
+    transition: 0.3s;
+    z-index: 0;
+}
+
+.submitBtn {
+    display: block;
+    margin: 30px auto 0;
+    padding: 15px 30px;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+  
+.submitBtn:hover {
+    background-color: blue;
+    transform: translateY(-2px);
+}
